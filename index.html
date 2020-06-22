@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -13,55 +14,115 @@
         <div class="container">
             <div class="top-content">
                 <div class="top-content__item logo">
-                    <a href="/"><img src="assets/img/logo.png" alt="logo"></a>
+                    <a href="#"><img src="assets/img/logo.png" alt="logo"></a>
                 </div>
                 <div class="top-content__item text-description">
                     <p class="text-description__item">Студия депиляции и<br> массажный кабинет<br>в Бресте</p>
                 </div>
                 <div class="top-content__item location">
-                    <img src="assets/img/map.png" alt="" class="location__item">
+                    <img src="assets/img/map.png" alt="" class="location__img">
                     <div class="location__item address">
-                        <p class="address__item text-bold">Мы находимся в центре:</p>
-                        <p class="address__item">г. Брест, ул. Гоголя, д.65</p>
-                        <p class="address__item map-link">Смотреть на карте</p>
+                        <p class="address__text"><span class="text-bold">Мы находимся в центре:</span><br>г. Брест, ул. Гоголя, д.65</p>
+                        <p class="address__link map-link">Смотреть на карте</p>
+                        <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aea02f84975d78ab1211716fa832b116b29ba08568b285e61c9f912690abdd11d&amp;source=constructor" width="405" height="258" frameborder="0"></iframe>
                     </div>
                 </div>
                 <div class="top-content__item contact">
                     <div class="contact__item phone">
                         <div class="phone__icon icon">
-
+                            <i class="fa fa-phone" aria-hidden="true"></i>
                         </div>
                         <div class="phone__text">
-                            <p class="text-regular ">Звоните, мы сейчас работаем</p>
-                            <a href="tel:+375333822499">+375 33 382 24 99</a>
+                            <p class="text-regular work-time">Звоните, мы сейчас работаем</p>
+                            <a href="tel:+375333822499" class="text-bold">+375 33 382 24 99</a>
                         </div>  
                     </div>
                     <div class="contact__item time">
                         <div class="icon time__icon">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
                         </div>
                         <div class="time__text">
                             <p>Пн-Вс <span class="text-bold">9:00-21:00</span></p>
                         </div>
                     </div>
                 </div>
-                <div class="top-content__item modal-send">
-
+                <div class="top-content__item modal-send modal-send-all">
+                    <p><i class="fa fa-calendar" aria-hidden="true"></i>Записаться онлайн</p>
                 </div>
             </div>
-            <nav class="main-navigation">
-                <a></a>
-            </nav>
+            <a href="#" class="mobile-nav"><i class="fa fa-bars" aria-hidden="true"></i></a>
+            <div class="wrapper-navigation">
+                <nav class="main-navigation">
+                    <a href="#" class="main-navigation__item">Главная</a>
+                    <a href="#" class="main-navigation__item">Шугаринг и депиляция воском</a>
+                    <a href="#" class="main-navigation__item">Антицеллюлитный массаж</a>
+                    <a href="#" class="main-navigation__item">Классический массаж</a>
+                    <a href="#" class="main-navigation__item">Обучение</a>
+                    <a href="#" class="main-navigation__item">Косметика для мастеров</a>
+                    <a href="#" class="main-navigation__item">Статьи</a>
+                    <a href="#" class="main-navigation__item">О студии</a>
+                    <a href="#" class="main-navigation__item">Контакты</a>
+                
+                </nav>
+            </div>
+            
             <div class="main-content">
-                <p>Хотите избавиться от<br>
+                <p class="main-content__text">Хотите избавиться от<br>
                     <span class="text-bold">нежелательных волос</span><br>
                     или нужен сеанс<br>
                     <span class="text-bold">антицеллюлитного массажа?</span>
                 </p>
-                <div class="">
-
+                <div class="button-features">
+                    <div class="features-container">
+                        <div class="features">
+                            <p class="features__item">депиляция воском и Шугаринг;</p>
+                            <p class="features__item">профессиональные сертифицированные мастера;</p>
+                            <p class="features__item">работаем и с женщинами, и с мужчинами;</p>
+                            <p class="features__item">результат уже после первой процедуры.</p>
+                        </div>
+                        <div class="button-free modal-send-all">
+                            <p class="button-free__text">ПОЛУЧИТЬ КАРТУ<br>КЛИЕНТА БЕСПЛАТНО</p>
+                            <img class="button-free__img" src="assets/img/flower.png">
+                        </div>
+                    </div>
+                    <div class="information-content">
+                        <img src="assets/img/card.png" class="information-content__img">
+                        <p class="information-content__icon">i</p>
+                        <p class="focus-modal">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut </p>
+                    </div>
+                    
                 </div>
             </div>
         </div>
     </header>
+    <div class="modal-window">
+        <div class="widow-education">
+            <div class="close">&#10006;</div>
+            <div class="wrapper-window-education">
+                <p class="widow-education__title"><span class="text-bold">Получите </span> программу обучения</p>
+                <p class="widow-education__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim<br> veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea </p>
+                <form class="modal-form" method="GET">
+                    <select class="modal-form__item" name="category" required>
+                        <option value="Повышение квалификации" selected>Повышение квалификации</option>
+                        <option value="Повышение квалификации" >Повышение квалификации</option>
+                        <option value="Повышение квалификации" >Повышение квалификации</option>
+                        <option value="Повышение квалификации" >Повышение квалификации</option>
+                        <option value="Повышение квалификации" >Повышение квалификации</option>
+                    </select>
+                    <input class="modal-form__item" type="text" name="name" placeholder="Ваше имя" required>
+                    <input class="modal-form__item" type="tel" name="phone" placeholder="Ваш номер телефона" required>
+                    <button class="modal-form__item button-modal" type="submit" value="Получить программу">Получить программу</button>
+                </form>
+            </div>
+        </div>
+        <div class="success-modal">
+            <div class="close">&#10006;</div>
+            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <p class="text-bold">Ваш заказ принят.</p>
+            <p>Ожидайте звонка</p>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
